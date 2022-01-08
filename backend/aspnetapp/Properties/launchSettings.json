@@ -1,0 +1,22 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:7922",
+      "sslPort": 44310
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "MyFinances": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api/helloworld/get",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000;https://localhost:5001"
+    }
+  }
+}

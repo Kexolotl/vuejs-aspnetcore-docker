@@ -1,0 +1,19 @@
+version: '3.9'
+services:
+  frontend:
+    container_name: vuejs-aspnetcorespa
+    build:
+      context: ./frontend
+      dockerfile: ./Dockerfile
+    ports:
+    - '8080:8080'
+    volumes:
+    - '.:/app'
+    command: /bin/sh -c "cd frontend && yarn serve"
+  backend:
+    container_name: aspnetcore-api
+    build:
+      context: ./backend
+      dockerfile: ./Dockerfile
+    ports:
+      - "5057:5057"
